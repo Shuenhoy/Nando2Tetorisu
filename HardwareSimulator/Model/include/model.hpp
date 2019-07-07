@@ -5,7 +5,7 @@
 #include <unordered_map>
 #include <unordered_set>
 
-namespace Nando2Tetorisu::Model
+namespace Nando2Tetorisu::HardwareSimulator
 {
 using pin_map = std::unordered_map<std::string, uint32_t>;
 class Model
@@ -28,6 +28,6 @@ private:
         pins_value;
     std::unordered_set<std::string> input_pins, output_pins, internal_pins;
 };
-} // namespace Nando2Tetorisu::Model
+} // namespace Nando2Tetorisu::HardwareSimulator
 
 #endif

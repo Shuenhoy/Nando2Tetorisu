@@ -1,7 +1,7 @@
 #ifndef TYPES_HPP
 #define TYPES_HPP
 
-namespace Nando2Tetorisu::common
+namespace Nando2Tetorisu::HardwareSimulator
 {
 enum class AnimateType
 {
@@ -24,6 +24,6 @@ enum class ViewType
     Compare,
     Script
 };
-} // namespace Nando2Tetorisu::common
+} // namespace Nando2Tetorisu::HardwareSimulator
 
 #endif
