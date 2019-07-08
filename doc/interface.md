@@ -12,6 +12,9 @@ observer.subscribe("load_chip", [](auto &&p){
 // in viewmodel
 observer.publish("set_pin_value", std::make_tuple("input1", 123));
 // in view
+observer.subscribe("set_pin_value",[](auto &&p){
+    auto&& [pin,value] = std::any_cast<std::tuple<string,uint32_t>>(p);
+});
 ```
 ## Command
 
