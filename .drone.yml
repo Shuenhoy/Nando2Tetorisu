@@ -1,0 +1,10 @@
+kind: pipeline
+name: default
+
+steps:
+- name: test
+  image: lycantropos/cmake
+  registry:  n5godgw2.mirror.aliyuncs.com
+  commands:
+  - mkdir HardwareSimulator/ViewModel/build
+  - cd HardwareSimulator/ViewModel/build && cmake .. && make && make test
